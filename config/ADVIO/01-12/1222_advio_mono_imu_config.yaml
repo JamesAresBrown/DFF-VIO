@@ -1,0 +1,48 @@
+%YAML:1.0
+---
+imu: 1.
+num_of_cam: 1.
+imu_topic: /imu0_1222
+image0_topic: /cam0/image_raw_20_1222
+image1_topic: /cam1/image_raw_1222
+output_path: /home/ares/tmp/dd/e
+cam0_calib: "cam0_pinhole.yaml"
+cam1_calib: "cam1_pinhole.yaml"
+image_width: 720.
+image_height: 1280.
+estimate_extrinsic: 1.
+body_T_cam0: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [ 9.9997633790932550e-01, -4.0792050429654418e-03,
+       -5.5392876501704474e-03, -8.9776683647311284e-03,
+       -4.0663863421071993e-03, -9.9998903301218578e-01,
+       2.3234365646622014e-03, 7.5570123202389386e-02,
+       -5.5487046750218698e-03, -2.3008567036498766e-03,
+       -9.9998195880468665e-01, -5.5457739425419181e-03, 0., 0., 0., 1. ]
+body_T_cam1: 0
+multiple_thread: 1.
+max_cnt: 150.
+min_dist: 30.
+freq: 10.
+F_threshold: 1.
+show_track: 1.
+flow_back: 1.
+max_solver_time: 4.0000000000000001e-02
+max_num_iterations: 8.
+keyframe_parallax: 10.
+acc_n: 4.8000000000000001e-02
+gyr_n: 2.4000000000000000e-02
+acc_w: 2.0999999999999999e-05
+gyr_w: 5.1000000000000003e-06
+g_norm: 9.8188999999999993e+00
+estimate_td: 1.
+td: 0.
+load_previous_pose_graph: 0.
+pose_graph_save_path: /home/ares/tmp
+save_image: 0.
+dynamic_compensation: 4
+dis_threshold: 10.
+theta_threshold: 30.
+dis_max: 100.
